@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // по сканеру вышел костыль, у меня не получается сделать это все на одном сканере
-        // вылетает программа, хотелось бы получить консультацию, если возможно
         Scanner scannerInt = new Scanner(System.in);
         Scanner scannerLine = new Scanner(System.in);
 
