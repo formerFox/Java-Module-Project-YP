@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int count;
+        int count = 0;
         Race racer = new Race();
 
         while(true){
@@ -13,7 +13,9 @@ public class Main {
             if(scanner.hasNextInt()){
                 count = scanner.nextInt();
                 scanner.nextLine();
-                break;
+                if(count > 0) {
+                    break;
+                }
             }
             else {
                 System.out.println("Ошибка ввода! Попробуйте снова!");
@@ -43,5 +45,7 @@ public class Main {
         }
         System.out.println("Победитель: " + racer.getRace());
         scanner.close();
+
     }
+
 }
